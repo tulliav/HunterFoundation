@@ -292,7 +292,16 @@
         </div>
         <div id="section-4">
           <h2>paragraphs</h2>
-          <p>Fusce convallis aliquet eros, in blandit diam mattis condimentum. Mauris auctor ex non neque tincidunt, at consequat libero posuere. Phasellus venenatis arcu quis risus faucibus mattis. Mauris vel magna et sapien rhoncus eleifend. Nullam congue nisi eu dui feugiat tincidunt.</p>
+          <div class="row">
+            <div class="column medium-6 large-6">
+              <p>Fusce convallis aliquet eros, in blandit diam mattis condimentum. Mauris auctor ex non neque tincidunt, at consequat libero posuere. Phasellus venenatis arcu quis risus faucibus mattis. Mauris vel magna et sapien rhoncus eleifend. Nullam congue nisi eu dui feugiat tincidunt.</p>
+            </div>   
+            <div class="column medium-6 large-6 panel">
+                <p>Paragraph example</p>
+                <p>Font size: 1rem (16px base)</p>
+                <p>Line height: 1.8</p>
+            </div>   
+          </div>
         </div>
         <div id="section-5">
           <h2>forms</h2>
@@ -304,20 +313,39 @@
                 <label for="">Input box (numbers)</label>
                 <input type="number" placeholder="12345">
 
-                <select name="" id="">
-                  <option value="defaukt" selected>select your option</option>
-                  <option value="option1">option 1</option>
-                  <option value="option2">option 2</option>
-                  <option value="option3">option 3</option>
-                  <option value="option4">option 4</option>
-                </select>
-                <label for="">Checkboxes</label>
-                  <input type="checkbox" name="vehicle" value="Bike"> Samples checkbox 1<br>
-                  <input type="checkbox" name="vehicle" value="Car" checked> Sample checkbox 2<br>
-                <label for="">Checkboxes</label>
-                  <input type="radio" name="vehicle1" value="Bike"><label for="vehicle1">Samples checkbox 1</label>
-                  <input type="radio" name="vehicle1" value="Car" checked><label for="vehicle1">Sample checkbox 2</label>
-                <input type="submit">
+                <div class="row">
+                    <div class="large-12 columns">
+                        <label>Select Box</label>
+                        <select>
+                            <option value="husker">Husker</option>
+                            <option value="starbuck">Starbuck</option>
+                            <option value="hotdog">Hot Dog</option>
+                            <option value="apollo">Apollo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 medium-6 columns">
+                        <label>Radio buttons</label>
+                        <input type="radio" name="pokemon" value="Red" id="radio-1">
+                        <label for="radio-1">Radio 1</label>
+                        <input type="radio" name="pokemon" value="Blue" id="radio-2">
+                        <label for="radio-2">Radio 2</label>
+                    </div>
+                    <div class="large-6 medium-6 columns">
+                        <label>Checkboxes</label>
+                        <input id="checkbox1" type="checkbox">
+                        <label for="checkbox1">Checkbox 1</label>
+                        <input id="checkbox2" type="checkbox">
+                        <label for="checkbox2">Checkbox 2</label>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="columns">
+                    <label>Textarea Label</label>
+                    <textarea placeholder="small-12.columns"></textarea>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
