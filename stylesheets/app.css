@@ -6653,10 +6653,9 @@ header {
   left: 0;
   z-index: 3000; }
   header .inner {
-    overflow: hidden; }
+    display: flex; }
     header .inner #menu-icon {
-      margin-right: 12px;
-      float: left; }
+      margin-right: 12px; }
     header .inner > svg {
       display: block;
       height: 36px;
@@ -6707,6 +6706,9 @@ nav {
     height: 32px;
     width: 32px; }
 
+.main {
+  margin-top: 60px; }
+
 footer {
   background-color: #efefef;
   padding: 20px; }
@@ -6749,7 +6751,7 @@ footer {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  width: 30px;
+  min-width: 30px;
   height: 36px;
   font-size: 0;
   text-indent: -9999px;

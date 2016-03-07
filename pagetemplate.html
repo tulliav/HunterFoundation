@@ -85,117 +85,87 @@
         </div>
         <div class="column"></div>
     </div>
-    <div class="row">
+    <div class="main row">
         <div class="large-8 medium-8 columns">
-            <h2>Columns</h2>
-            <p>Foundation comes with a built in responsive framework.</p>
-            <!-- Grid Example -->
+            <h2>Examples</h2>
+            <p>Foundation comes with a built in responsive framework. Foundation uses a "flexible <strong>12</strong> column layout" approach that offers a responsive behavior of its elements wrapping content.</p>
+            
+            <p>Assign the parent <strong>div</strong> the <strong>"row"</strong> class and its children the <strong>"column"</strong> class; this will set up the responsive structure.</p> 
+            <p>Foundation has three main specific breakpoints: <strong>small, medium</strong> and <strong>large</strong>. You have to append a number to each one of those classes that add up to <strong>12</strong>. For instance, if you would like to split the layout for two elements at 50% on a large screen, assigning "large-6" classes to each one of them will make them behave in that manner. On the other hand if you want those two same elements to have a 60-40 proportion (e.g: sidebar) on a medium screen then you would have to assign them a <strong>"medium-8"</strong> and <strong>"medium-4"</strong> class respectively.</p>
+            <p>Example code below:</p>
+            <div class="docs-code" data-docs-code="">
+            <pre>
+<code class="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small-6 columns"</span>&gt;</span>6 columns<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small-6 columns"</span>&gt;</span>6 columns<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"medium-6 large-4 columns"</span>&gt;</span>12/6/4 columns<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"medium-6 large-8 columns"</span>&gt;</span>12/6/8 columns<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code>
+            </pre>
+            </div>
+            <h2>More Examples</h2>
+            <h3>Two Column</h3>
+            <div class="row">
+                <div class="large-6 medium-6 columns">
+                    <div class="callout panel">
+                        <p>Six columns</p>
+                    </div>
+                </div>
+                <div class="large-6 medium-6 columns">
+                    <div class="callout panel">
+                        <p>Six columns</p>
+                    </div>
+                </div>
+            </div>
+            <h3>Three Column</h3>
+            <div class="row">
+                <div class="large-4 medium-4 small-4 columns">
+                    <div class="callout panel">
+                        <p>Four columns</p>
+                    </div>
+                </div>
+                <div class="large-4 medium-4 small-4 columns">
+                    <div class="callout panel">
+                        <p>Four columns</p>
+                    </div>
+                </div>
+                <div class="large-4 medium-4 small-4 columns">
+                    <div class="callout panel">
+                        <p>Four columns</p>
+                    </div>
+                </div>
+            </div>
+            <h3>Sidebar</h3>
+            <div class="row">
+                <div class="small-8 medium-8 large-8 columns">
+                    <div class="callout panel">
+                        <p>Main content</p>
+                    </div>
+                </div>
+                <div class="small-4 medium-4 large-4 columns">
+                    <div class="callout panel">
+                        <p>Sidebar</p>
+                    </div>
+                </div>
+            </div>
+            <h3>Callout panel</h3>
             <div class="row">
                 <div class="large-12 columns ">
                     <div class="callout panel">
+                        <p>Callout panel example</p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="large-6 medium-6 columns">
-                    <div class="callout panel">
-                        <p>Six columns</p>
-                    </div>
-                </div>
-                <div class="large-6 medium-6 columns">
-                    <div class="callout panel">
-                        <p>Six columns</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="large-4 medium-4 small-4 columns">
-                    <div class="callout panel">
-                        <p>Four columns</p>
-                    </div>
-                </div>
-                <div class="large-4 medium-4 small-4 columns">
-                    <div class="callout panel">
-                        <p>Four columns</p>
-                    </div>
-                </div>
-                <div class="large-4 medium-4 small-4 columns">
-                    <div class="callout panel">
-                        <p>Four columns</p>
-                    </div>
-                </div>
-            </div>
-            <hr />
-            <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-            <form>
-                <div class="row">
-                    <div class="large-12 columns">
-                        <label>Input Label</label>
-                        <input type="text" placeholder="large-12.columns" />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="large-4 medium-4 columns">
-                        <label>Input Label</label>
-                        <input type="text" placeholder="large-4.columns" />
-                    </div>
-                    <div class="large-4 medium-4 columns">
-                        <label>Input Label</label>
-                        <input type="text" placeholder="large-4.columns" />
-                    </div>
-                    <div class="large-4 medium-4 columns">
-                        <div class="row collapse">
-                            <label>Input Label</label>
-                            <div class="small-9 columns">
-                                <input type="text" placeholder="small-9.columns" />
-                            </div>
-                            <div class="small-3 columns">
-                                <span class="postfix">.com</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="large-12 columns">
-                        <label>Select Box</label>
-                        <select>
-                            <option value="husker">Husker</option>
-                            <option value="starbuck">Starbuck</option>
-                            <option value="hotdog">Hot Dog</option>
-                            <option value="apollo">Apollo</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="large-6 medium-6 columns">
-                        <label>Choose Your Favorite</label>
-                        <input type="radio" name="pokemon" value="Red" id="radio-1">
-                        <label for="radio-1">Radio 1</label>
-                        <input type="radio" name="pokemon" value="Blue" id="radio-2">
-                        <label for="radio-2">Radio 2</label>
-                    </div>
-                    <div class="large-6 medium-6 columns">
-                        <label>Check these out</label>
-                        <input id="checkbox1" type="checkbox">
-                        <label for="checkbox1">Checkbox 1</label>
-                        <input id="checkbox2" type="checkbox">
-                        <label for="checkbox2">Checkbox 2</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="large-12 columns">
-                        
-                    </div>
-                </div>
-            </form>
         </div>
         <div class="large-4 medium-4 columns">
             <h5>Try one of these buttons:</h5>
             <p><a href="#" class=" button">Primary Button</a>
                 <a href="#" class="medium secondary button">Secondary Button</a></p>
             <div class="panel">
-                <h5>So many components, girl!</h5>
-                <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
+                <h5>More foundation components</h5>
+                <p>There are more elements preconfigured in Foundation. Please follow the link below to find more information about the usage of additional elements and stylying documentation.</p>
                 <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>
             </div>
         </div>
@@ -214,7 +184,4 @@
     <script src="js/foundation.js"></script>
     <script src="js/app.js"></script>
 </body>
-
-</html>
-
 </html>
