@@ -6708,6 +6708,11 @@ nav {
 
 .main {
   margin-top: 60px; }
+  .main h2 {
+    border-bottom: 1px solid #E6E6E7; }
+  .main img {
+    border: 1px solid #7E7C79;
+    margin: 2rem 0; }
 
 footer {
   background-color: #efefef;
@@ -6722,8 +6727,6 @@ footer {
   margin-top: 2rem; }
   .styleguide-wrapper > div:first-child {
     margin-top: 0; }
-  .styleguide-wrapper > div > h2 {
-    border-bottom: 1px solid #E6E6E7; }
 .styleguide-wrapper .color-group > div {
   clear: both;
   margin-bottom: 0.5rem;
@@ -6740,9 +6743,8 @@ footer {
     vertical-align: top;
     height: 32px;
     width: 32px; }
-.styleguide-wrapper .font-snaps img {
-  border: 1px solid #7E7C79;
-  margin: 2rem 0; }
+.styleguide-wrapper .headings-example h2 {
+  border-bottom: none; }
 
 /*Hamburger animation*/
 .c-hamburger {

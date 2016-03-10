@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Templates | Hunter Foundation Theme </title>
+    <title>Sections | Hunter Foundation Theme </title>
     <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="font/css/fontello.css">
+    <link rel="stylesheet" href="font/css/fontello-embedded.css">
     <script src="js/modernizr.js"></script>
-        <!-- Remove when developing for a real web site/web app-->
+    <!-- Remove when developing for a real web site/web app-->
     <!-- Start -->
     <script type="text/javascript" src="notfordev/syntaxhighlighter/scripts/shCore.js"></script>
     <script type="text/javascript" src="notfordev/syntaxhighlighter/scripts/shBrushJScript.js"></script>
@@ -15,7 +17,6 @@
     <script type="text/javascript">SyntaxHighlighter.all();</script>
     <!-- End -->
 </head>
-
 <body>
     <header>
         <div class="inner">
@@ -85,141 +86,34 @@
     </nav>
     <div class="row main">
         <div class="column">
-            <h1>Page Template</h1>
-            <h2>Foundation Theme information</h2>
-            <p>The <strong>Hunter Foundation Theme</strong> is based on Foundation, a well known responsive front-end framework that many organizations use around the world. Hunter Industries websites are based on this framework.</p>
-            <a class="small button" href="http://foundation.zurb.com/sites/docs/">Zurb's Foundation Documentation</a>
-            <a class="small button" href="http://foundation.zurb.com/templates.html">Foundation Templates</a>
-        </div>
-        <div class="column"></div>
-    </div>
-    <div class="row">
-        <div class="large-8 medium-8 columns">
-            <h2>Examples</h2>
-            <p>Foundation comes with a built in responsive framework. Foundation uses a "flexible <strong>12</strong> column layout" approach that offers a responsive behavior of its elements wrapping content.</p>
-            
-            <p>Assign the parent <strong>div</strong> the <strong>"row"</strong> class and its children the <strong>"column"</strong> class; this will set up the responsive structure.</p> 
-            <p>Foundation has three main specific breakpoints: <strong>small, medium</strong> and <strong>large</strong>. You have to append a number to each one of those classes that add up to <strong>12</strong>. For instance, if you would like to split the layout for two elements at 50% on a large screen, assigning "large-6" classes to each one of them will make them behave in that manner. On the other hand if you want those two same elements to have a 60-40 proportion (e.g: sidebar) on a medium screen then you would have to assign them a <strong>"medium-8"</strong> and <strong>"medium-4"</strong> class respectively.</p>
-
-            <h2>UI/Code Examples</h2>
-            <h3>Two Column</h3>
-            <div class="row">
-                <div class="large-6 medium-6 columns">
-                    <div class="callout panel">
-                        <p>Six columns</p>
-                    </div>
+            <h1>Sections</h1>
+            <p>In this page, you will find different sections you can use to style a page/app such as search boxes, headers and footers.</p>
+            <h2>Searchbox</h2>
+            <p>Hunter's Foundation theme comes with a predefined "search box" section. Please follow the content below for more.</p>
+            <div class="row collapse">
+                <div class="small-9 medium-3 large-3 columns">
+                    <input type="text" placeholder="Search..." />
                 </div>
-                <div class="large-6 medium-6 columns">
-                    <div class="callout panel">
-                        <p>Six columns</p>
-                    </div>
+                <div class="small-3 medium-1 large-1 end columns">
+                    <span class="postfix"><i class="fi-magnifying-glass"></i></span></input>
                 </div>
             </div>
-            <pre class="brush: js;">
-                <div class="row">
-                    <div class="large-6 medium-6 columns">
-                        <div class="callout panel">
-                            <p>Six columns</p>
-                        </div>
+            <h2>Header</h2>
+            <h2>Footer</h2>
+            <p>Hunter Industries footer comes with copyright text and customer support contact information. Furthermore, the footer section has some javascript embedded to update the year value. See footer snapshot below:</p>
+            <img src="images/footersample.png" alt="Footer sample">
+                <pre class="brush: js;">
+                <footer>
+                    <div class="inner">
+                        <p>Copyright ©
+                            <script type="text/javascript">
+                            document.write(new Date().getFullYear());
+                            </script> Hunter Industries. All rights reserved.</p>
+                        <p><a href="tel:7605917383">(1) 760-591-7383</a> | <a href="http://www.hunterindustries.com/">www.hunterindustries.com</a></p>
+                        <button href="#0" class="cd-top" style="margin-bottom: 185px;">Top &#8593;</button>
                     </div>
-                    <div class="large-6 medium-6 columns">
-                        <div class="callout panel">
-                            <p>Six columns</p>
-                        </div>
-                    </div>
-                </div>
-            </pre>
-            <h3>Three Column</h3>
-            <div class="row">
-                <div class="large-4 medium-4 small-4 columns">
-                    <div class="callout panel">
-                        <p>Four columns</p>
-                    </div>
-                </div>
-                <div class="large-4 medium-4 small-4 columns">
-                    <div class="callout panel">
-                        <p>Four columns</p>
-                    </div>
-                </div>
-                <div class="large-4 medium-4 small-4 columns">
-                    <div class="callout panel">
-                        <p>Four columns</p>
-                    </div>
-                </div>
-            </div>
-            <pre class="brush: js;">
-                <div class="row">
-                    <div class="large-4 medium-4 small-4 columns">
-                        <div class="callout panel">
-                            <p>Four columns</p>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-4 small-4 columns">
-                        <div class="callout panel">
-                            <p>Four columns</p>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-4 small-4 columns">
-                        <div class="callout panel">
-                            <p>Four columns</p>
-                        </div>
-                    </div>
-                </div>
-            </pre>
-            <h3>Sidebar</h3>
-            <div class="row">
-                <div class="small-8 medium-8 large-8 columns">
-                    <div class="callout panel">
-                        <p>Main content</p>
-                    </div>
-                </div>
-                <div class="small-4 medium-4 large-4 columns">
-                    <div class="callout panel">
-                        <p>Sidebar</p>
-                    </div>
-                </div>
-            </div>
-            <pre class="brush: js;">
-                <div class="row">
-                    <div class="small-8 medium-8 large-8 columns">
-                        <div class="callout panel">
-                            <p>Main content</p>
-                        </div>
-                    </div>
-                    <div class="small-4 medium-4 large-4 columns">
-                        <div class="callout panel">
-                            <p>Sidebar</p>
-                        </div>
-                    </div>
-                </div>
-            </pre>
-            <h3>Callout panel</h3>
-            <div class="row">
-                <div class="large-12 columns ">
-                    <div class="callout panel">
-                        <p>Callout panel example</p>
-                    </div>
-                </div>
-            </div>
-            <pre class="brush: js;">
-                <div class="row">
-                    <div class="large-12 columns ">
-                        <div class="callout panel">
-                            <p>Callout panel example</p>
-                        </div>
-                    </div>
-                </div>
-            </pre>
-        </div>
-        <div class="large-4 medium-4 columns">
-            <h5>Try one of these buttons:</h5>
-            <p><a href="#" class=" button">Primary Button</a>
-                <a href="#" class="medium secondary button">Secondary Button</a></p>
-            <div class="panel">
-                <h5>More foundation components</h5>
-                <p>There are more elements preconfigured in Foundation. Please follow the link below to find more information about the usage of additional elements and stylying documentation.</p>
-                <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>
-            </div>
+                </footer>
+                </pre>
         </div>
     </div>
     <footer>

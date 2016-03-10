@@ -63,7 +63,10 @@ nav 																		{ @include transition(); z-index: 3000; position: fixed; t
 		> svg 																{ position: absolute; top: 35%; right: 10px; height: 32px; width: 32px; }
 	}
 }
-.main 																		{ margin-top: 60px; }
+.main 																		{ margin-top: 60px;
+	h2 																		{ border-bottom: 1px solid $hborder; }
+	img 																	{ border: 1px solid $hgrey; margin: 2rem 0; }
+}
 footer 																		{ background-color: #efefef; padding: 20px; 
 	.inner 																	{
 		p 																	{ margin: 0; text-align: center; color: $hgrey; }
@@ -74,7 +77,6 @@ footer 																		{ background-color: #efefef; padding: 20px;
 .styleguide-wrapper 														{ 
 	> div 																	{ margin-top: 2rem; 
 		&:first-child 														{ margin-top: 0; }
-		> h2 																{ border-bottom: 1px solid $hborder; }
 	}
 	.color-group 															{  
 		> div 																{ clear: both; margin-bottom: 0.5rem; overflow: hidden; 
@@ -83,8 +85,8 @@ footer 																		{ background-color: #efefef; padding: 20px;
 		}
 	}
 	.font-snaps 															{
-		img 																{ border: 1px solid $hgrey; margin: 2rem 0; }
 	}
+	.headings-example h2 															{ border-bottom: none; }
 }
 
 
