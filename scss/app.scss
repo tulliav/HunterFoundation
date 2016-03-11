@@ -46,11 +46,16 @@ h2 																			{ }
 header 																		{ width: 100%; background-color: $hblue; padding: 12px; position: fixed; top: 0; left: 0; z-index: 3000;
 	.inner 																	{ display: flex;
 		#menu-icon 															{ margin-right: 12px; }	
-		> svg 																{ display: block; height: 36px; width: auto; float: left;  }
-		
+		> svg 																{ display: block; height: 36px; width: auto;
+			path, polygon, rect 											{ fill: #FFFFFF;}
+			@media #{$small-only} 											{ margin: 0 auto;
+			}
+		}
+		.logo-title 																	{ font-size: 2rem; line-height:2rem; font-style:italic; margin: auto auto 0 1rem; padding-left: 1rem; border-left: 1px solid #FFFFFF; color: $white; text-transform: uppercase; 
+			@media #{$small-only} 											{ display: none; }
+		}
 	}
 	.inner:after 															{ content: ""; clear: both; } 
-	
 } 
 nav 																		{ @include transition(); z-index: 3000; position: fixed; top: 60px; left: 0; background-color: $hblue; @include translate3d(-100%, 0,0 );
 	> a 																	{ font-weight: bold;  border-top: 1px solid $hlblue; border-bottom: 1px solid #333333;  color: $white; display: block; text-transform: uppercase; padding: 1rem 2rem;
